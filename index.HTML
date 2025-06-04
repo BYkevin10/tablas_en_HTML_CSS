@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Tablas HTML/CSS</title>
+    <link rel="stylesheet" href="../Actividad_3/_CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#tabla1">Tabla 1</a></li>
+            <li><a href="#tabla2">Tabla 2</a></li>
+            <li><a href="#tabla3">Tabla 3</a></li>
+            <li><a href="#tabla4">Tabla 4</a></li>
+            <li><a href="#tabla5">Tabla 5</a></li>
+            <li><a href="./Actividad_3/_HTML/tablas.HTML">Tabla 6-10</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="tabla1">
+            <table class="tabla-basica">
+                <caption>Información de Productos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 30%;">Producto</th>
+                        <th scope="col" style="width: 20%;">Precio</th>
+                        <th scope="col" style="width: 25%;">Stock</th>
+                        <th scope="col" style="width: 25%;">Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptop Gamer</td>
+                        <td>$1,200</td>
+                        <td>15</td>
+                        <td>Electrónicos</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado Mecánico</td>
+                        <td>$80</td>
+                        <td>32</td>
+                        <td>Accesorios</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor 24"</td>
+                        <td>$180</td>
+                        <td>8</td>
+                        <td>Electrónicos</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de productos</td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Sección para la Tabla 2 - Horario de clases -->
+        <section id="tabla2">
+            <!-- Tabla con bordes dashed y combinación de celdas -->
+            <table class="tabla-dashed">
+                <!-- Título descriptivo de la tabla -->
+                <caption>Horario de Clases</caption>
+
+                <!-- Encabezado de la tabla -->
+                <thead>
+                    <tr>
+                        <!-- Columnas con anchos porcentuales -->
+                        <th scope="col" style="width: 15%;">Hora</th>
+                        <th scope="col" style="width: 17%;">Lunes</th>
+                        <th scope="col" style="width: 17%;">Martes</th>
+                        <th scope="col" style="width: 17%;">Miércoles</th>
+                        <th scope="col" style="width: 17%;">Jueves</th>
+                        <th scope="col" style="width: 17%;">Viernes</th>
+                    </tr>
+                </thead>
+
+                <!-- Cuerpo de la tabla -->
+                <tbody>
+                    <!-- Fila 1 - Con rowspan para Matemáticas -->
+                    <tr>
+                        <td>8:00 - 9:00</td>
+                        <td rowspan="2">Matemáticas</td> <!-- Celda que ocupa 2 filas -->
+                        <td>Historia</td>
+                        <td rowspan="2">Matemáticas</td> <!-- Celda que ocupa 2 filas -->
+                        <td>Ciencias</td>
+                        <td>Arte</td>
+                    </tr>
+
+                    <!-- Fila 2 - Continuación del rowspan -->
+                    <tr>
+                        <td>9:00 - 10:00</td>
+                        <!-- Celda de Matemáticas (rowspan) continúa aquí automáticamente -->
+                        <td>Educación Física</td>
+                        <!-- Celda de Matemáticas (rowspan) continúa aquí automáticamente -->
+                        <td>Literatura</td>
+                        <td>Música</td>
+                    </tr>
+
+                    <!-- Fila 3 - Recreo con colspan -->
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td colspan="5" style="text-align: center;">RECREO</td> <!-- Celda que ocupa 5 columnas -->
+                    </tr>
+
+                    <!-- Fila 4 - Con rowspan para Inglés -->
+                    <tr>
+                        <td>11:00 - 12:00</td>
+                        <td>Ciencias</td>
+                        <td rowspan="2">Inglés</td> <!-- Celda que ocupa 2 filas -->
+                        <td>Historia</td>
+                        <td rowspan="2">Inglés</td> <!-- Celda que ocupa 2 filas -->
+                        <td>Taller</td>
+                    </tr>
+
+                    <!-- Fila 5 - Continuación del rowspan -->
+                    <tr>
+                        <td>12:00 - 13:00</td>
+                        <td>Informática</td>
+                        <!-- Celda de Inglés (rowspan) continúa aquí automáticamente -->
+                        <td>Informática</td>
+                        <!-- Celda de Inglés (rowspan) continúa aquí automáticamente -->
+                        <td>Taller</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección para la Tabla 3 - Bordes dobles -->
+        <section id="tabla3">
+            <table class="tabla-doble">
+                <caption>Resultados de Competencia</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 20%;">Prueba</th>
+                        <th scope="col" style="width: 16%;">Participante A</th>
+                        <th scope="col" style="width: 16%;">Participante B</th>
+                        <th scope="col" style="width: 16%;">Participante C</th>
+                        <th scope="col" style="width: 16%;">Participante D</th>
+                        <th scope="col" style="width: 16%;">Promedio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" style="height: 60px;">Velocidad</th>
+                        <td>9.8 s</td>
+                        <td>10.2 s</td>
+                        <td>9.5 s</td>
+                        <td>10.0 s</td>
+                        <td>9.9 s</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="height: 50px;">Resistencia</th>
+                        <td>85%</td>
+                        <td>92%</td>
+                        <td>88%</td>
+                        <td>90%</td>
+                        <td>89%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="height: 70px;">Precisión</th>
+                        <td>95%</td>
+                        <td>89%</td>
+                        <td>93%</td>
+                        <td>91%</td>
+                        <td>92%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="height: 55px;">Fuerza</th>
+                        <td>120 kg</td>
+                        <td>115 kg</td>
+                        <td>125 kg</td>
+                        <td>118 kg</td>
+                        <td>120 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección para la Tabla 4 - Estructura compleja -->
+        <section id="tabla4">
+            <table class="tabla-groove">
+                <caption>Información de Empleados por Departamento</caption>
+                <colgroup>
+                    <col style="width: 15%">
+                    <col style="width: 15%">
+                    <col style="width: 20%">
+                    <col style="width: 15%">
+                    <col style="width: 15%">
+                    <col style="width: 20%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2">Información Personal</th>
+                        <th colspan="2">Información Laboral</th>
+                        <th colspan="2">Contacto</th>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Puesto</th>
+                        <th>Salario</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">María</td>
+                        <td rowspan="2">González</td>
+                        <td>Desarrolladora Senior</td>
+                        <td>$4,500</td>
+                        <td>555-0101</td>
+                        <td>m.gonzalez@empresa.com</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Proyectos:</strong> Portal Cliente, API Backend</td>
+                        <td colspan="2"><strong>Habilidades:</strong> JavaScript, Python, SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>Martínez</td>
+                        <td>Diseñador UI/UX</td>
+                        <td>$3,800</td>
+                        <td>555-0102</td>
+                        <td>c.martinez@empresa.com</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Ana</td>
+                        <td rowspan="3">López</td>
+                        <td>Gerente de Proyecto</td>
+                        <td>$5,200</td>
+                        <td>555-0103</td>
+                        <td>a.lopez@empresa.com</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><strong>Equipo a cargo:</strong> 8 personas</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><strong>Proyectos actuales:</strong> E-commerce, Intranet</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Total empleados mostrados: 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    <!--Tabla 5 - Información de cursos académicos-->
+
+        <section id="tabla5" aria-labelledby="tabla5-heading">
+            <h2 id="tabla5-heading" class="sr-only">Cursos Académicos</h2>
+
+            <!-- 
+    Tabla con atributos de accesibilidad:
+    - aria-describedby para conectar con descripción
+    - summary para dispositivos antiguos-->
+            <table class="tabla-ridge" aria-describedby="tabla5-desc">
+                <!-- 
+    Descripción accesible para la tabla 
+    - Visible solo para screen readers
+    -->
+                <p id="tabla5-desc" class="sr-only">
+                    Tabla de cursos académicos mostrando departamento, nombre del curso, horarios, instructor y
+                    disponibilidad
+                </p>
+
+                <!-- 
+    Leyenda visible para la tabla 
+    - caption-side top por defecto
+    -->
+                <caption>Cursos Académicos 2025 - Segundo Semestre</caption>
+
+                <!-- 
+    Agrupación de columnas para estilizado consistente
+    - Usando colgroup y col para control preciso
+    -->
+                <colgroup>
+                    <col style="width: 20%"> <!-- Departamento -->
+                    <col style="width: 25%"> <!-- Nombre del curso -->
+                    <col style="width: 15%"> <!-- Horario -->
+                    <col style="width: 20%"> <!-- Instructor -->
+                    <col style="width: 20%"> <!-- Disponibilidad -->
+                </colgroup>
+
+                <!-- 
+    Encabezado principal de la tabla
+    - scope="col" para indicar relación con columnas
+    - id para referencia desde celdas de datos
+    -->
+                <thead>
+                    <tr>
+                        <th scope="col" id="departamento">Departamento</th>
+                        <th scope="col" id="curso">Nombre del Curso</th>
+                        <th scope="col" id="horario">Horario</th>
+                        <th scope="col" id="instructor">Instructor</th>
+                        <th scope="col" id="disponibilidad">Disponibilidad</th>
+                    </tr>
+                </thead>
+
+                <!-- 
+    Cuerpo de la tabla con datos agrupados
+    - Grupos semánticos con tbody múltiples
+    -->
+                <tbody>
+                    <!-- Primer grupo: Ciencias -->
+                    <tr>
+                        <th scope="rowgroup" rowspan="3" id="ciencias" headers="departamento">Ciencias</th>
+                        <td headers="ciencias curso">Biología Molecular</td>
+                        <td headers="ciencias horario">Lun/Mie 10:00-12:00</td>
+                        <td headers="ciencias instructor">Dra. Rodríguez</td>
+                        <td headers="ciencias disponibilidad">
+                            <span class="disponible">Disponible</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="ciencias curso">Química Orgánica</td>
+                        <td headers="ciencias horario">Mar/Jue 14:00-16:00</td>
+                        <td headers="ciencias instructor">Dr. Fernández</td>
+                        <td headers="ciencias disponibilidad">
+                            <span class="cupo-completo">Cupo completo</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="ciencias curso">Física Cuántica</td>
+                        <td headers="ciencias horario">Vie 9:00-13:00</td>
+                        <td headers="ciencias instructor">Dr. González</td>
+                        <td headers="ciencias disponibilidad">
+                            <span class="disponible">Disponible</span>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <!-- Segundo grupo: Humanidades -->
+                    <tr>
+                        <th scope="rowgroup" rowspan="2" id="humanidades" headers="departamento">Humanidades</th>
+                        <td headers="humanidades curso">Historia del Arte</td>
+                        <td headers="humanidades horario">Lun 16:00-19:00</td>
+                        <td headers="humanidades instructor">Lic. Martínez</td>
+                        <td headers="humanidades disponibilidad">
+                            <span class="disponible">Disponible</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="humanidades curso">Filosofía Contemporánea</td>
+                        <td headers="humanidades horario">Mie 16:00-19:00</td>
+                        <td headers="humanidades instructor">Dr. López</td>
+                        <td headers="humanidades disponibilidad">
+                            <span class="ultimos-lugares">Últimos lugares</span>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <!--Pie de tabla con información resumen
+    - Usando atributos ARIA para actualizaciones-->
+                <tfoot>
+                    <tr>
+                        <td colspan="5" aria-live="polite">
+                            Total de cursos disponibles: <span class="contador">3</span> |
+                            Cupos completos: <span class="contador">1</span> |
+                            Últimos lugares: <span class="contador">1</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; - 2025</p>
+    </footer>
+</body>
+</html>

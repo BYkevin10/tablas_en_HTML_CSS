@@ -1,0 +1,537 @@
+/* TABLA 1 */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header,
+nav,
+main,
+footer {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla básica */
+.tabla-basica {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-basica caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tabla-basica th,
+.tabla-basica td {
+    border: 2px solid rgb(70, 130, 180);
+    /* SteelBlue en RGB */
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabla-basica thead th {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    text-align: center;
+}
+
+.tabla-basica tbody tr:nth-child(even) {
+    background-color: rgb(240, 248, 255);
+    /* AliceBlue en RGB */
+}
+
+.tabla-basica tbody tr:hover {
+    background-color: rgb(220, 240, 255);
+}
+
+.tabla-basica tfoot td {
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(70, 130, 180);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* TABLA 2 */
+
+/* Estructura general de la tabla */
+.tabla-dashed {
+    width: 100%;
+    /* Tabla responsive al 100% del contenedor */
+    border-collapse: separate;
+    /* Permite usar border-spacing */
+    border-spacing: 0;
+    /* Elimina espacio entre celdas */
+    margin: 20px 0;
+    /* Espaciado externo */
+    background-color: white;
+    /* Fondo blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+/* Estilo para el título/caption de la tabla */
+.tabla-dashed caption {
+    font-size: 1.2em;
+    /* Tamaño de fuente más grande */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+    text-align: right;
+    /* Alineación a la derecha */
+    color: rgb(60, 60, 60);
+    /* Color de texto gris oscuro */
+}
+
+/* Estilos comunes para celdas (th y td) */
+.tabla-dashed th,
+.tabla-dashed td {
+    border: 1px dashed rgb(169, 169, 169);
+    /* Borde dashed en gris */
+    padding: 10px 12px;
+    /* Espaciado interno */
+}
+
+/* Estilos específicos para celdas de encabezado */
+.tabla-dashed thead th {
+    background-color: rgb(105, 105, 105);
+    /* Fondo gris oscuro */
+    color: white;
+    /* Texto blanco */
+    text-align: center;
+    /* Texto centrado */
+    border-bottom: 3px double rgb(220, 220, 220);
+    /* Borde inferior doble */
+    padding: 15px 12px;
+    /* Mayor padding vertical */
+}
+
+/* Filas impares con fondo ligeramente gris */
+.tabla-dashed tbody tr:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+
+/* Efecto hover para filas */
+.tabla-dashed tbody tr:hover {
+    background-color: rgb(230, 230, 250);
+    /* Fondo lavanda claro */
+}
+
+/* Estilos para celdas con rowspan */
+.tabla-dashed td[rowspan] {
+    background-color: rgb(220, 220, 255);
+    /* Fondo azul claro */
+    text-align: center;
+    /* Texto centrado */
+    vertical-align: middle;
+    /* Alineación vertical media */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+/* Estilos para celdas con colspan */
+.tabla-dashed td[colspan] {
+    background-color: rgb(255, 228, 225);
+    /* Fondo rosa claro */
+    font-style: italic;
+    /* Texto en cursiva */
+}
+
+/* TABLA 3 */
+
+/* =============================================
+   ESTILOS PARA TABLA 3 - BORDES DOBLES
+   ============================================= */
+
+.tabla-doble {
+    width: 90%;
+    /* Ancho relativo al contenedor */
+    margin: 25px auto;
+    /* Centrado con margen */
+    border: 4px double rgb(178, 34, 34);
+    /* Borde doble color firebrick */
+    border-collapse: collapse;
+    /* Bordes unificados */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-doble caption {
+    font-size: 1.3em;
+    padding: 10px;
+    caption-side: bottom;
+    /* Leyenda abajo de la tabla */
+    color: rgb(178, 34, 34);
+}
+
+.tabla-doble th,
+.tabla-doble td {
+    border: 2px double rgb(178, 34, 34);
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.tabla-doble thead th {
+    background-color: rgb(178, 34, 34);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tabla-doble tbody th {
+    background-color: rgb(255, 228, 181);
+    /* Fondo moccasin */
+    text-align: left;
+    /* Alineación izquierda para cabeceras de fila */
+}
+
+.tabla-doble tbody tr:nth-child(4n+1) {
+    background-color: rgb(255, 250, 240);
+    /* Fondo floral white */
+}
+
+.tabla-doble tbody tr:hover {
+    background-color: rgb(255, 215, 215);
+    /* Fondo rosa claro al hover */
+}
+
+.tabla-doble td:last-child {
+    font-weight: bold;
+    color: rgb(178, 34, 34);
+}
+
+/* TABLA 4 */
+
+/* =============================================
+   ESTILOS PARA TABLA 4 - BORDES GROOVE
+   ============================================= */
+
+.tabla-groove {
+    width: 95%;
+    margin: 30px auto;
+    border: 6px groove rgb(70, 130, 180);
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-groove caption {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 15px;
+    color: rgb(70, 130, 180);
+    caption-side: top;
+}
+
+.tabla-groove th,
+.tabla-groove td {
+    border: 2px groove rgba(70, 130, 180, 0.6);
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-groove thead tr:first-child th {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    font-size: 1.1em;
+    padding: 15px;
+    border-bottom: none;
+}
+
+.tabla-groove thead tr:last-child th {
+    background-color: rgb(135, 206, 250);
+    color: rgb(0, 0, 139);
+    font-weight: bold;
+}
+
+.tabla-groove tbody th,
+.tabla-groove tbody td {
+    text-align: left;
+    padding: 12px 15px;
+}
+
+.tabla-groove tbody tr:nth-child(odd) {
+    background-color: rgb(240, 248, 255);
+}
+
+.tabla-groove tbody tr:nth-child(even) {
+    background-color: rgb(224, 238, 255);
+}
+
+.tabla-groove tbody tr:hover {
+    background-color: rgb(200, 230, 255);
+}
+
+.tabla-groove tfoot td {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilos para filas con información adicional */
+.tabla-groove tr td[colspan] {
+    background-color: rgb(225, 239, 255);
+    font-size: 0.95em;
+    padding: 10px 15px;
+}
+
+/* Estilos para celdas que ocupan múltiples filas */
+.tabla-groove td[rowspan] {
+    vertical-align: middle;
+    font-weight: bold;
+    color: rgb(0, 0, 139);
+}
+
+/* TABLA 5 */
+
+/* Clase para elementos solo screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Contenedor principal de la tabla */
+.tabla-ridge {
+    width: 100%;
+    margin: 25px 0;
+    border: 5px ridge rgb(46, 139, 87);
+    /* Bordes ridge en verde */
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Leyenda de la tabla */
+.tabla-ridge caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    color: rgb(46, 139, 87);
+    /* Color que combina con el borde */
+    background-color: rgb(240, 255, 240);
+    text-align: center;
+}
+
+/* Estilos para celdas */
+.tabla-ridge th,
+.tabla-ridge td {
+    border: 2px ridge rgba(46, 139, 87, 0.5);
+    /* Borde ridge semitransparente */
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Encabezados de columna */
+.tabla-ridge thead th {
+    background-color: rgb(46, 139, 87);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    /* Encabezados pegajosos */
+}
+
+/* Encabezados de grupo (rowgroup) */
+.tabla-ridge tbody th {
+    background-color: rgb(144, 238, 144);
+    /* LightGreen */
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Filas alternas para mejor legibilidad */
+.tabla-ridge tbody tr:nth-child(even) {
+    background-color: rgb(245, 255, 245);
+}
+
+/* Efecto hover */
+.tabla-ridge tbody tr:hover {
+    background-color: rgb(220, 255, 220);
+}
+
+/* Pie de tabla */
+.tabla-ridge tfoot td {
+    background-color: rgb(46, 139, 87);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilos para estados de disponibilidad */
+.disponible {
+    color: rgb(0, 100, 0);
+    font-weight: bold;
+}
+
+.cupo-completo {
+    color: rgb(139, 0, 0);
+    font-weight: bold;
+}
+
+.ultimos-lugares {
+    color: rgb(184, 134, 11);
+    font-weight: bold;
+}
+
+/* Contadores destacados */
+.contador {
+    font-size: 1.1em;
+    color: rgb(255, 255, 0);
+}
+
+/* TABLA 6 */
+/* Estilos básicos para todas las tablas */
+table {
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Tabla 6 - Bordes inset */
+.tabla-inset {
+    border: 4px inset rgb(139, 0, 139);
+    border-collapse: collapse;
+}
+
+.tabla-inset th, .tabla-inset td {
+    border: 2px inset rgb(139, 0, 139);
+    background-color: rgb(255, 240, 255);
+}
+
+.tabla-inset th {
+    background-color: rgb(139, 0, 139);
+    color: white;
+}
+
+/* Tabla 7 - Bordes outset */
+.tabla-outset {
+    border: 4px outset rgb(0, 100, 0);
+    border-collapse: collapse;
+}
+
+.tabla-outset th, .tabla-outset td {
+    border: 2px outset rgb(0, 100, 0);
+    background-color: rgb(240, 255, 240);
+}
+
+.tabla-outset th {
+    background-color: rgb(0, 100, 0);
+    color: white;
+}
+
+/* Tabla 8 - Sin bordes */
+.tabla-sin-borde {
+    border: none;
+    border-collapse: collapse;
+}
+
+.tabla-sin-borde th {
+    background-color: rgb(70, 130, 180);
+    color: white;
+}
+
+.tabla-sin-borde tr:nth-child(even) {
+    background-color: rgb(240, 248, 255);
+}
+
+/* Tabla 9 - Bordes hidden */
+.tabla-hidden {
+    border: 4px hidden rgb(220, 20, 60);
+    border-collapse: collapse;
+}
+
+.tabla-hidden th {
+    background-color: rgb(220, 20, 60);
+    color: white;
+}
+
+.tabla-hidden tr:hover {
+    background-color: rgb(255, 228, 225);
+}
+
+/* Tabla 10 - Bordes collapse */
+.tabla-collapse {
+    border: 4px solid rgb(47, 79, 79);
+    border-collapse: collapse;
+}
+
+.tabla-collapse th, .tabla-collapse td {
+    border: 2px solid rgb(47, 79, 79);
+}
+
+.tabla-collapse th {
+    background-color: rgb(47, 79, 79);
+    color: white;
+}
+
+/* Estilos generales */
+body {
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(70, 130, 180);
+}
